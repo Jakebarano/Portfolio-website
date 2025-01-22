@@ -1,6 +1,6 @@
 :root {
-    --primary-color: #2c3e50;
-    --secondary-color: #3498db;
+    --primary-color: #b82d18;
+    --secondary-color: #db5b34;
     --text-color: #333;
     --background-color: #ecf0f1;
 }
@@ -76,6 +76,28 @@ h2 {
     color: var(--secondary-color);
 }
 
+.about-content {
+    display: flex;
+    flex-direction: row;
+    align-items: left;
+    gap: 2rem;
+}
+
+.profile-image {
+    width: 50%;
+    height: 400px;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1rem;
+}
+
+.about-text p {
+    margin-top: 9rem;
+    text-align: left;
+}
+
 .project-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -101,6 +123,7 @@ h2 {
 .project-card img {
     width: 100%;
     height: 300px;
+    border-radius: 8px;
     object-fit: cover;
 }
 
@@ -124,6 +147,7 @@ h2 {
     padding: 0.5rem 1rem;
     text-decoration: none;
     border-radius: 4px;
+    border-width: 0px;
     transition: background-color 0.3s ease;
 }
 
