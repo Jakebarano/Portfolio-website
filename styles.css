@@ -125,6 +125,7 @@ h2 {
     height: 300px;
     border-radius: 8px;
     object-fit: cover;
+    object-position: center;
 }
 
 .project-card h3 {
