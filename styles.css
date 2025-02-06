@@ -94,7 +94,7 @@ h2 {
 }
 
 .about-text p {
-    margin-top: 9rem;
+    margin-top: 5rem;
     text-align: left;
 }
 
@@ -139,6 +139,17 @@ h2 {
 .resume-content ul {
     margin-left: 2rem;
     margin-bottom: 1rem;
+    list-style-type: none
+}
+
+.small-buff {
+    margin-bottom: 1rem;
+}
+
+.resume-content ul ul li
+{
+    margin-top: 1rem;
+    list-style-type: circle
 }
 
 .button {
@@ -190,6 +201,11 @@ footer {
     text-align: center;
     padding: 1rem 0;
     margin-top: 2rem;
+}
+
+.socials-logo {
+    height: 4rem;
+    width: 4rem;
 }
 
 @media (max-width: 768px) {
