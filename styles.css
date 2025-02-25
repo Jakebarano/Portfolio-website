@@ -289,3 +289,7 @@ footer ul li{
     position: relative;
     color: #000; /* Changed to black */
 }
+
+.large {
+    font-size: 16px;
+}
