@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dual Shadows - Jake's Portfolio</title>
     <link rel="shortcut icon" href="PhotosAndReels/Link Icons/websiteIcon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="project-page-style.css">
     <script src="script.js" defer></script>
 </head>
 
@@ -28,8 +28,10 @@
 
     <main>
         <section id="Title">
-            <h1>Dual Shadows</h1>
-
+            <div class="work-media-container">
+                <div class="project-card">
+                    <img class = "project-card" src="PhotosAndReels\Projects Photos\Dual_Shadows_Logo_Large.jpg">
+                </div>
             <div>
                 <h4>What is it?</h4>
                 <p>A single-player, narrative-driven beat 'em up. An ancient magic has broken free, spreading chaos
@@ -52,76 +54,143 @@
             <div>
                 <h3>Project time frame: 8 Months (August 2024 - April 2025)</h3>
             </div>
-
-            <!-- Organize this Producer > Leads, Programmers, Designers, Artists, -->
-            <!-- <p>Team:</p>
-                <ul>
-                    <li>Andrew Lounsbury</li>
-                    <li>Will Badger</li>
-                    <li>Allen Rocke</li>
-                    <li>Liam Dunphy</li>
-                    <li>Tucker Wolfson</li>
-                    <li>Jake Baranowski</li>
-                    <li>Michael KirkPatrick</li>
-                    <li>Tu Nyugen</li>
-                    <li>Sam Fiener</li>
-                    <li>Carl Nelson</li>
-                    <li>Daren Phon</li>
-                    <li>Darin Hienze</li>
-                    <li>Nick Stratton</li>
-                </ul> -->
-
-            <!-- <p>Project: Developing a fully realized game from concept to completion over the course of an academic year.
-            </p> -->
             <p> &emsp; </p>
-        </section id="My Work">
-
-        <section>
-            <h3>Key Contributions: </h3>
-
-            <!-- Put Image/GIF/Video Content Here -->
-            <h3>Destructible Environment Aspects</h3>
-            <p>
-                After initially learning Unreal Engine’s Blueprint system and creating the base class for our destructible objects during the first semester of development, 
-                I transitioned the class into C++ during the second semester, with a more defined focus on inheritance and polymorphism. 
-                This shift allowed for a more flexible, faster, and easily optimized system that Blueprint-based child classes could inherit from, enabling other developers, such as our combat systems designers, to 
-                add unique behaviors and events for the wide variety of destructible objects introduced into the game.
-            </p>
-            <p> &emsp; </p>
-            
-            <!-- Put Image/GIF/Video Content Here -->
-
-            <h3>User Interfaces</h3>
-            <p>
-                Throughout the development cycle, I collaborated with Drew Lounsbury, the team’s UI Designer, to create a modular, player-focused HUD system. 
-                We designed the HUD around user widgets, allowing distinct and freely transferable UI elements that corresponded to essential gameplay systems, 
-                including Mana Charge, Ability Icons (which dynamically swapped based on the player’s current combat Stance), 
-                and Tutorial Prompts for guiding the player through the game’s mechanics. I also implemented widgets from Unreal’s
-                Common UI plugin to allow for UI elements, such as Input Bindings, to dynamically update during gameplay based on the user’s current controller device.
-            </p>
-
-            <p> &emsp; </p>
-
-            <!-- Put Image/GIF/Video Content Here -->
-
-            <h3>Tutorial System</h3>
-            <p>
-                Originally created in the first semester as a modular system where each instance acted autonomously and could be easily customized for different experiences, 
-                I developed a Tutorial System Blueprint based on overlap trigger volumes that dilated time and prompted the Player with specific input actions to teach core 
-                gameplay mechanics and controls. During the second semester of development, the system received several new functionalities and refinements including, making the 
-                transition from dilated time based on the Player’s prompted actions, and adding the ability for forced Mana Gain and Stance Swapping to align with the intended game 
-                mechanic lesson.
-            </p>
-
-            <p> &emsp; </p>
-
-            <p>
-                <bold> Skills: Unreal Engine - C++ - Unreal Blueprints - Subversion - Jira - Team Coordination - Agile
-                    Methodologies - Learning Agility</bold>
-            </p>
-
         </section>
-        
+
+        <section id="my-work" class="work-section">
+            <h2 class="section-title">My Work</h2>
+
+            <!-- Destructible Environment Aspects -->
+            <div class="work-item" data-work-id="1">
+                <div class="work-header">
+                    <h3 class="work-title">Destructible Environment Aspects</h3>
+                    <button class="expand-button" aria-label="Expand section">▼</button>
+                </div>
+
+                <div class="work-content">
+                    <div class="work-media-container">
+                        <div class="media-container">
+                             <!-- Can be replaced with Images as needed -->
+                            <video 
+                                src="https://example.com/videos/tutorial-demo.mp4" 
+                                controls 
+                                class="media-content" 
+                                aria-label="Destructible Objects Showcase"
+                            ></video>
+                            <p class="media-caption">Destructible Objects Showcase</p>
+                        </div>
+
+                        <div class="work-description">
+                            <p>
+                                After initially learning Unreal Engine's Blueprint system and creating the base class for our destructible objects during the first semester of development, 
+                                I transitioned the class into C++ during the second semester, with a more defined focus on inheritance and polymorphism. 
+                                This shift allowed for a more flexible, faster, and easily optimized system that Blueprint-based child classes could inherit from, enabling other developers, such as our combat systems designers, to 
+                                add unique behaviors and events for the wide variety of destructible objects introduced into the game.
+                            </p>
+
+                            <div class="work-skills">
+                                <span class="work-skill-tag">Unreal Engine</span>
+                                <span class="work-skill-tag">C++</span>
+                                <span class="work-skill-tag">Blueprints</span>
+                                <span class="work-skill-tag">Object-Oriented Programming</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- User Interfaces -->
+            <div class="work-item" data-work-id="2">
+                <div class="work-header">
+                    <h3 class="work-title">User Interfaces</h3>
+                    <button class="expand-button" aria-label="Expand section">▼</button>
+                </div>
+
+                <div class="work-content">
+                    <div class="work-media-container">
+                        <div class="media-container">
+                            <video 
+                                src="https://example.com/videos/tutorial-demo.mp4" 
+                                controls 
+                                class="media-content" 
+                                aria-label="Player HUD in Action"
+                            ></video>
+                            <p class="media-caption">Player HUD Demo</p>
+                        </div>
+                        <div class="work-description">
+                            <p>
+                                Throughout the development cycle, I collaborated with Drew Lounsbury, the team's UI Designer, to create a modular, player-focused HUD system. 
+                                We designed the HUD around user widgets, allowing distinct and freely transferable UI elements that corresponded to essential gameplay systems, 
+                                including Mana Charge, Ability Icons (which dynamically swapped based on the player's current combat Stance), 
+                                and Tutorial Prompts for guiding the player through the game's mechanics. I also implemented widgets from Unreal's
+                                Common UI plugin to allow for UI elements, such as Input Bindings, to dynamically update during gameplay based on the user's current controller device.
+                            </p>
+
+                            <div class="work-skills">
+                                <span class="work-skill-tag">Unreal Engine</span>
+                                <span class="work-skill-tag">UI/UX Design</span>
+                                <span class="work-skill-tag">User Widgets</span>
+                                <span class="work-skill-tag">Common UI Plugin</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tutorial System -->
+            <div class="work-item" data-work-id="3">
+                <div class="work-header">
+                    <h3 class="work-title">Tutorial System</h3>
+                    <button class="expand-button" aria-label="Expand section">▼</button>
+                </div>
+
+                <div class="work-content">
+                    <div class="work-media-container">
+                        <div class="media-container">
+                            <video 
+                                src="https://example.com/videos/tutorial-demo.mp4" 
+                                controls 
+                                class="media-content" 
+                                aria-label="Tutorial system in action"
+                            ></video>
+                            <p class="media-caption">Tutorial system guides a new player.</p>
+                        </div>
+
+                        <div class="work-description">
+                            <p>
+                                Originally created in the first semester as a modular system where each instance acted autonomously and could be easily customized for different experiences, 
+                                I developed a Tutorial System Blueprint based on overlap trigger volumes that dilated time and prompted the Player with specific input actions to teach core 
+                                gameplay mechanics and controls. During the second semester of development, the system received several new functionalities and refinements including, making the 
+                                transition from dilated time based on the Player's prompted actions, and adding the ability for forced Mana Gain and Stance Swapping to align with the intended game 
+                                mechanic lesson.
+                            </p>
+
+                            <div class="work-skills">
+                                <span class="work-skill-tag">Unreal Engine</span>
+                                <span class="work-skill-tag">Blueprints</span>
+                                <span class="work-skill-tag">Game Design</span>
+                                <span class="work-skill-tag">User Experience</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Skills Section -->
+            <div class="skills-container">
+                <h3>Skills</h3>
+                <div class="skills-list">
+                    <span class="skill-tag">Unreal Engine</span>
+                    <span class="skill-tag">C++</span>
+                    <span class="skill-tag">Unreal Blueprints</span>
+                    <span class="skill-tag">Subversion</span>
+                    <span class="skill-tag">Jira</span>
+                    <span class="skill-tag">Team Coordination</span>
+                    <span class="skill-tag">Agile Methodologies</span>
+                    <span class="skill-tag">Learning Agility</span>
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer>
