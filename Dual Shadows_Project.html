@@ -79,21 +79,40 @@
         <section>
             <h3>Key Contributions: </h3>
 
-            <p>UI/UX: Created and optimized user interfaces and in-game menus.</p>
-            <p> &emsp; </p>
-            <p>Destructible Environments: Implemented and refined destructible environment elements using C++,
-                blueprints, chaos physics, and the fracture tool in Unreal Engine 5.</p>
-            <p> &emsp; </p>
-            <p>Physics-Based Visual Effects: Utilized Niagara VFX for dynamic, physics-based effects for mechanics like
-                Boss Attacks, and Player Abilities</p>
-            <p> &emsp; </p>
-            <p>The development of our game is still on going! We successfully passed the Champlain College Game Studio
-                Greenlight process.
-                This means that 8 game projects including Dual Shadows, will be onboarding new members going into next
-                semester to add to
-                our development bandwidth and capabilities so that we can continue to improve on Dual Shadows and make
-                it into a full gameplay experience!
+            <!-- Put Image/GIF/Video Content Here -->
+            <h3>Destructible Environment Aspects</h3>
+            <p>
+                After initially learning Unreal Engine’s Blueprint system and creating the base class for our destructible objects during the first semester of development, 
+                I transitioned the class into C++ during the second semester, with a more defined focus on inheritance and polymorphism. 
+                This shift allowed for a more flexible, faster, and easily optimized system that Blueprint-based child classes could inherit from, enabling other developers, such as our combat systems designers, to 
+                add unique behaviors and events for the wide variety of destructible objects introduced into the game.
             </p>
+            <p> &emsp; </p>
+            
+            <!-- Put Image/GIF/Video Content Here -->
+
+            <h3>User Interfaces</h3>
+            <p>
+                Throughout the development cycle, I collaborated with Drew Lounsbury, the team’s UI Designer, to create a modular, player-focused HUD system. 
+                We designed the HUD around user widgets, allowing distinct and freely transferable UI elements that corresponded to essential gameplay systems, 
+                including Mana Charge, Ability Icons (which dynamically swapped based on the player’s current combat Stance), 
+                and Tutorial Prompts for guiding the player through the game’s mechanics. I also implemented widgets from Unreal’s
+                Common UI plugin to allow for UI elements, such as Input Bindings, to dynamically update during gameplay based on the user’s current controller device.
+            </p>
+
+            <p> &emsp; </p>
+
+            <!-- Put Image/GIF/Video Content Here -->
+
+            <h3>Tutorial System</h3>
+            <p>
+                Originally created in the first semester as a modular system where each instance acted autonomously and could be easily customized for different experiences, 
+                I developed a Tutorial System Blueprint based on overlap trigger volumes that dilated time and prompted the Player with specific input actions to teach core 
+                gameplay mechanics and controls. During the second semester of development, the system received several new functionalities and refinements including, making the 
+                transition from dilated time based on the Player’s prompted actions, and adding the ability for forced Mana Gain and Stance Swapping to align with the intended game 
+                mechanic lesson.
+            </p>
+
             <p> &emsp; </p>
 
             <p>
@@ -118,5 +137,4 @@
         </ul>
     </footer>
 </body>
-
 </html>

@@ -14,7 +14,7 @@
 }
 
 body {
-    font-family: Lexend;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     line-height: 1.6;
     color: var(--text-color);
     background-color: var(--background-color);
@@ -51,6 +51,7 @@ h2 {
 p {
     font-size: 18px;
 }
+
 /* General Add-on classes */
 
 .small-buff {
